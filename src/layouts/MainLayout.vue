@@ -29,9 +29,7 @@ const auth = useAuthStore();
 async function logout() {
   try {
     await auth.logout();
-  } catch {
-    // Sesi sudah dihapus store; abaikan kegagalan request logout
-  }
+  } catch {}
   router.push("/login");
 }
 </script>

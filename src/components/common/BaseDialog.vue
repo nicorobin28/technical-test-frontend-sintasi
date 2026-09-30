@@ -11,7 +11,6 @@
       :class="cardClass"
       :style="{ width, maxWidth: '95vw' }"
     >
-      <!-- Header bawaan: judul + tombol tutup -->
       <q-card-section class="row items-center" :class="headerClass">
         <div class="text-h6 text-weight-bold" :class="titleClass">
           <slot name="title">{{ title }}</slot>
@@ -27,21 +26,12 @@
         <slot name="subtitle">{{ subtitle }}</slot>
       </q-card-section>
 
-      <!-- Konten utama (bebas slot: tiap dialog punya q-card-section sendiri) -->
       <slot />
     </q-card>
   </q-dialog>
 </template>
 
 <script setup>
-/**
- * Shell dialog generik agar semua popup memiliki transisi, header,
- * dan tombol close yang konsisten.
- *
- * @slot title   - override judul (mis. judul + ikon)
- * @slot subtitle - override deskripsi di bawah judul
- * @slot default - isi dialog
- */
 defineProps({
   modelValue: { type: Boolean, default: false },
   title: { type: String, default: "" },

@@ -116,7 +116,6 @@ async function login() {
 </script>
 
 <style scoped>
-/* Background Solid Biru sesuai gambar referensi dengan sedikit sentuhan gradient modern */
 .login-page {
   min-height: 100vh;
   background: #0055cc;
@@ -125,7 +124,6 @@ async function login() {
   overflow: hidden;
 }
 
-/* Efek dekoratif interaktif di background */
 .bg-shape {
   position: absolute;
   filter: blur(80px);
@@ -148,7 +146,6 @@ async function login() {
   right: -100px;
 }
 
-/* Card Styling menyerupai gambar */
 .login-card {
   width: min(420px, 90vw);
   background: #ffffff;
@@ -164,8 +161,6 @@ async function login() {
   transform: translateY(-3px);
 }
 
-/* Logo Styling -> lihat src/css/_components.scss (.brand-logo) */
-
 .brand-text {
   font-size: 36px;
   font-weight: 800;
@@ -178,7 +173,6 @@ async function login() {
   color: #10b981;
 }
 
-/* Input Customization agar abu-abu terang dan rounded */
 :deep(.rounded-input .q-field__control) {
   border-radius: 30px !important;
   padding-left: 8px;
@@ -186,7 +180,6 @@ async function login() {
   box-shadow: none !important;
 }
 
-/* Tombol Login Pill / Rounded Oval seperti di gambar */
 .login-btn {
   border-radius: 30px;
   background: #0066cc !important;

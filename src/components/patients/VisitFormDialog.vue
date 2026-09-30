@@ -124,13 +124,6 @@ import {
   notifyWarning,
 } from "../../utils/notify";
 
-/**
- * Dialog pembuatan kunjungan.
- * Alur: cari pasien by No. Rekam Medik -> isi data kunjungan -> simpan.
- *
- * @property {boolean} modelValue - visibilitas dialog (v-model)
- * @event created - kunjungan berhasil disimpan (parent wajib refresh data)
- */
 const props = defineProps({
   modelValue: { type: Boolean, default: false },
 });
@@ -155,7 +148,6 @@ const visible = computed({
   set: (value) => emit("update:modelValue", value),
 });
 
-// Reset state setiap kali dialog dibuka
 watch(
   () => props.modelValue,
   (open) => {

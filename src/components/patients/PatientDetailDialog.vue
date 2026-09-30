@@ -129,13 +129,6 @@ import { usePatientsStore } from "../../stores/patients";
 import { genderLabel } from "../../constants/patient";
 import { notifyApiError } from "../../utils/notify";
 
-/**
- * Dialog detail pasien + riwayat kunjungan.
- * Data diambil dari store (bisa dipakai bersama oleh page lain).
- *
- * @property {boolean} modelValue - visibilitas dialog (v-model)
- * @property {string} recordNumber - No. Rekam Medik yang akan ditampilkan
- */
 const props = defineProps({
   modelValue: { type: Boolean, default: false },
   recordNumber: { type: String, default: "" },
@@ -150,7 +143,6 @@ const visible = computed({
   set: (value) => emit("update:modelValue", value),
 });
 
-// Muat detail setiap kali dialog dibuka
 watch(
   () => props.modelValue,
   async (open) => {

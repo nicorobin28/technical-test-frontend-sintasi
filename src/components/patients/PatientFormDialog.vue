@@ -96,12 +96,6 @@ import { GENDER_OPTIONS } from "../../constants/patient";
 import { patientRules } from "../../utils/validators";
 import { notifyApiError, notifySuccess } from "../../utils/notify";
 
-/**
- * Dialog pendaftaran pasien baru.
- *
- * @property {boolean} modelValue - visibilitas dialog (v-model)
- * @event created - pasien berhasil disimpan (parent wajib refresh data)
- */
 const props = defineProps({
   modelValue: { type: Boolean, default: false },
 });
@@ -126,7 +120,6 @@ const visible = computed({
   set: (value) => emit("update:modelValue", value),
 });
 
-// Reset form setiap kali dialog dibuka
 watch(
   () => props.modelValue,
   (open) => {

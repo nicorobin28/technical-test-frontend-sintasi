@@ -61,11 +61,6 @@
 <script setup>
 import { PATIENT_COLUMNS } from "../../constants/patient";
 
-/**
- * Tabel daftar pasien.
- *
- * @event {Object} view - baris pasien yang dipilih untuk melihat detail
- */
 defineProps({
   rows: { type: Array, default: () => [] },
   loading: { type: Boolean, default: false },

@@ -1,12 +1,10 @@
 <template>
   <q-page class="patient-page flex flex-center q-pa-md">
     <q-card class="main-card shadow-15 column">
-      <!-- Logo Section -->
       <div class="text-center q-mb-xl q-mt-md">
         <img src="../assets/logo.png" alt="Medisin Logo" class="brand-logo" />
       </div>
 
-      <!-- Action Buttons -->
       <div class="row q-gutter-sm q-mb-md">
         <q-btn
           unelevated
