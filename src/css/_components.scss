@@ -1,0 +1,38 @@
+/**
+ * Component styles yang dipakai lintas component.
+ * Di-import oleh app.scss -> gunakan class global, bukan scoped.
+ */
+
+.brand-logo {
+  max-height: 55px;
+  object-fit: contain;
+}
+
+/* Tombol aksi utama (pill) */
+.action-btn {
+  border-radius: 30px;
+  padding: 8px 24px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.action-btn-small {
+  border-radius: 12px;
+  height: 40px;
+}
+.bg-green-custom {
+  background: #32cd32 !important;
+}
+
+/* Transisi fade (dipakai kartu hasil pencarian pada dialog kunjungan) */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
